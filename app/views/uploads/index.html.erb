@@ -167,7 +167,7 @@
             callbacks: {
                 onComplete: function(id, name, response) {
                     var previewLink = qq(this.getItemByFileId(id)).getByClass('preview-link')[0];
-
+                    location.reload();
                     if (response.success) {
 
                         previewLink.setAttribute("href", response.tempLink)
@@ -217,7 +217,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Upload', new_upload_path %>
