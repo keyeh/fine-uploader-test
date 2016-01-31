@@ -143,6 +143,10 @@
             resume: {
                 enabled: true
             },
+            retry: {
+                enableAuto: true,
+                maxAutoAttempts: 10
+            },
             deleteFile: {
                 enabled: true,
                 method: "POST",
@@ -150,7 +154,7 @@
             },
             validation: {
                 itemLimit: 5,
-                sizeLimit: 15000000
+                sizeLimit: 107374182400
             },
             objectProperties: {
                 reducedRedundancy: true,
