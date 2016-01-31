@@ -171,9 +171,7 @@
             callbacks: {
                 onComplete: function(id, name, response) {
                     var previewLink = qq(this.getItemByFileId(id)).getByClass('preview-link')[0];
-                    location.reload();
                     if (response.success) {
-
                         previewLink.setAttribute("href", response.tempLink)
                     }
                 }
@@ -193,7 +191,7 @@
 
 
 
-
+<h1>Refresh to see latest uploaded files</h1>
 <h1>Listing Uploads</h1>
 
 <table border="1">
